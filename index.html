@@ -189,6 +189,11 @@ p{margin:0;}
 .rm-row .bar{flex:1;height:6px;background:var(--g100);border-radius:4px;overflow:hidden;}
 .rm-row .bar span{display:block;height:100%;background:linear-gradient(90deg,var(--gold-light),var(--gold));border-radius:4px;}
 .rm-row .val{font-family:var(--font-mono);font-size:11px;color:var(--g600);width:30px;text-align:right;}
+@media (max-width:400px){
+  .report-mock{padding:26px 20px;}
+  .radar-wrap svg{width:180px;height:180px;}
+  .rm-row .lbl{flex:0 0 92px;font-size:10.5px;}
+}
 
 .floating-card{
   position:absolute;background:var(--white);border:1px solid var(--line);border-radius:var(--radius-m);
@@ -218,6 +223,7 @@ p{margin:0;}
 /* ---------- What is / method ---------- */
 .method{display:grid;grid-template-columns:0.9fr 1.1fr;gap:64px;align-items:center;}
 @media (max-width:900px){.method{grid-template-columns:1fr;}}
+@media (max-width:480px){.method-figure{padding:30px 26px;}.method-stack .row .v{font-size:21px;}}
 .method-copy p + p{margin-top:16px;}
 .method-copy p{color:var(--ink-soft);font-size:16px;line-height:1.75;}
 .method-figure{background:var(--ink);border-radius:var(--radius-l);padding:44px;color:#fff;position:relative;overflow:hidden;}
@@ -368,6 +374,7 @@ body.modal-open{overflow:hidden;}
 .offer-price-box{background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.14);border-radius:var(--radius-m);padding:34px;text-align:center;position:relative;}
 .offer-old{font-family:var(--font-mono);font-size:15px;color:rgba(255,255,255,0.45);text-decoration:line-through;}
 .offer-new{font-family:var(--font-display);font-size:52px;font-weight:600;color:var(--gold-light);margin-top:4px;}
+@media (max-width:400px){.offer-new{font-size:42px;}.offer-card{padding:28px 22px;}.offer-price-box{padding:26px 20px;}}
 .offer-new sup{font-size:22px;top:-18px;}
 .offer-install{font-size:12.5px;color:rgba(255,255,255,0.6);margin-top:6px;}
 
@@ -567,9 +574,10 @@ footer{border-top:1px solid var(--line);padding:56px 0 40px;}
       <div class="diff-item"><span class="num">02</span><h4>Perfis Diagnósticos™</h4><p>Perfil Predominante e Perfil Secundário, sintetizando como seu sistema opera hoje.</p></div>
       <div class="diff-item"><span class="num">01</span><h4>Radar Sistêmico™</h4><p>Visualização única dos 12 Domínios™ lado a lado, revelando o equilíbrio do seu perfil.</p></div>
       <div class="diff-item"><span class="num">50</span><h4>Páginas de relatório</h4><p>Um documento premium — não uma tela de resultado com três frases genéricas.</p></div>
-      <div class="diff-item"><span class="num">★</span><h4>Protocolos Personalizados™</h4><p>Indicações práticas de desenvolvimento, específicas para o seu perfil.</p></div>
+      <div class="diff-item"><span class="num">★</span><h4>Protocolos Personalizados™*</h4><p>Indicações práticas de desenvolvimento, específicas para o seu perfil.</p></div>
       <div class="diff-item"><span class="num">→</span><h4>Plano de Desenvolvimento™</h4><p>Prioridades e prazos claros para os seus próximos 30, 90 e 180 dias.</p></div>
     </div>
+    <p class="small muted" style="margin-top:18px;font-size:12px;color:var(--g600);">* Os Protocolos Personalizados™ são recursos adicionais, disponíveis mediante aquisição à parte.</p>
   </div>
 </section>
 
@@ -659,10 +667,11 @@ footer{border-top:1px solid var(--line);padding:56px 0 40px;}
       <div class="deliver-item"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg><div><h4>Análise completa dos 12 Domínios™</h4><p>Uma devolutiva individual para cada domínio avaliado.</p></div></div>
       <div class="deliver-item"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 17l6-6 4 4 8-8"/></svg><div><h4>4 Índices Estratégicos™</h4><p>ICS™, ITP™, IRE™ e IEI™, com interpretação individual.</p></div></div>
       <div class="deliver-item"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M9 18h6M10 21h4M12 3a6 6 0 00-4 10.4c.6.6 1 1.4 1 2.3v.3h6v-.3c0-.9.4-1.7 1-2.3A6 6 0 0012 3z"/></svg><div><h4>Recomendações práticas</h4><p>Ações concretas para cada domínio do seu perfil.</p></div></div>
-      <div class="deliver-item"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2l2.5 5.5L20 8l-4 4 1 6-5-3-5 3 1-6-4-4 5.5-.5z"/></svg><div><h4>Protocolos personalizados</h4><p>Indicados a partir dos seus resultados específicos.</p></div></div>
+      <div class="deliver-item"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2l2.5 5.5L20 8l-4 4 1 6-5-3-5 3 1-6-4-4 5.5-.5z"/></svg><div><h4>Protocolos personalizados*</h4><p>Indicados a partir dos seus resultados específicos.</p></div></div>
       <div class="deliver-item"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M8 2v4M16 2v4M3 10h18"/></svg><div><h4>Plano inicial de desenvolvimento</h4><p>Prioridades para os próximos 30, 90 e 180 dias.</p></div></div>
       <div class="deliver-item"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 13l4 4L19 7"/></svg><div><h4>Acesso imediato</h4><p>Sem fila de espera e sem necessidade de devolutiva ao vivo.</p></div></div>
     </div>
+    <p class="small muted" style="margin-top:18px;font-size:12px;color:var(--g600);">* Os Protocolos Personalizados™ são recursos adicionais, disponíveis mediante aquisição à parte.</p>
   </div>
 </section>
 
@@ -848,9 +857,10 @@ footer{border-top:1px solid var(--line);padding:56px 0 40px;}
           <div class="li"><span class="check">✔</span> Relatório Premium em PDF, ~50 páginas</div>
           <div class="li"><span class="check">✔</span> Perfil Diagnóstico™ e Perfil Secundário™</div>
           <div class="li"><span class="check">✔</span> Radar dos 12 Domínios™ e 4 Índices Estratégicos™</div>
-          <div class="li"><span class="check">✔</span> Protocolos Personalizados™</div>
+          <div class="li"><span class="check">✔</span> Protocolos Personalizados™*</div>
           <div class="li"><span class="check">✔</span> Plano Inicial de Desenvolvimento™</div>
         </div>
+        <p class="small" style="margin-top:16px;font-size:12px;color:rgba(255,255,255,0.5);">* Os Protocolos Personalizados™ são recursos adicionais, disponíveis mediante aquisição à parte.</p>
       </div>
       <div class="offer-price-box">
         <div class="offer-old">De R$ 697,00</div>
@@ -896,7 +906,7 @@ footer{border-top:1px solid var(--line);padding:56px 0 40px;}
       <div class="faq-item"><button class="faq-q">Como funciona a garantia?<span class="plus">+</span></button><div class="faq-a"><div class="faq-a-inner">Você tem 7 dias corridos, a partir da compra, para solicitar reembolso integral, sem necessidade de justificativa.</div></div></div>
       <div class="faq-item"><button class="faq-q">Meus dados e minhas respostas são confidenciais?<span class="plus">+</span></button><div class="faq-a"><div class="faq-a-inner">Sim. Suas respostas e o seu relatório são de acesso individual e tratados com confidencialidade pelo Instituto Garcia Marques™.</div></div></div>
       <div class="faq-item"><button class="faq-q">Posso refazer o Assessment depois?<span class="plus">+</span></button><div class="faq-a"><div class="faq-a-inner">Sim. Muitos participantes refazem o SOH Assessment™ periodicamente para acompanhar sua evolução ao longo do tempo.</div></div></div>
-      <div class="faq-item"><button class="faq-q">O que são os Protocolos Personalizados™?<span class="plus">+</span></button><div class="faq-a"><div class="faq-a-inner">São indicações práticas de desenvolvimento do Método Garcia Marques™, selecionadas a partir dos domínios de maior prioridade no seu perfil.</div></div></div>
+      <div class="faq-item"><button class="faq-q">O que são os Protocolos Personalizados™?<span class="plus">+</span></button><div class="faq-a"><div class="faq-a-inner">São indicações práticas de desenvolvimento do Método Garcia Marques™, selecionadas a partir dos domínios de maior prioridade no seu perfil. São recursos adicionais, disponíveis mediante aquisição à parte do SOH Assessment™.</div></div></div>
       <div class="faq-item"><button class="faq-q">Qual a diferença para outros testes online?<span class="plus">+</span></button><div class="faq-a"><div class="faq-a-inner">A extensão (288 perguntas), a profundidade (12 Domínios™ e 72 competências) e a entrega (relatório de ~50 páginas com plano de desenvolvimento) — não apenas uma pontuação isolada.</div></div></div>
       <div class="faq-item"><button class="faq-q">Existe algum pré-requisito para participar?<span class="plus">+</span></button><div class="faq-a"><div class="faq-a-inner">Não. Qualquer pessoa maior de 18 anos pode realizar o SOH Assessment™, sem necessidade de conhecimento prévio sobre o tema.</div></div></div>
       <div class="faq-item"><button class="faq-q">Tenho suporte se tiver dúvidas?<span class="plus">+</span></button><div class="faq-a"><div class="faq-a-inner">Sim. Nossa equipe está disponível pelo <a href="https://wa.me/5548991761593" target="_blank" rel="noopener" style="color:var(--gold);font-weight:600;">WhatsApp</a> para dúvidas sobre acesso, pagamento e uso do relatório.</div></div></div>
